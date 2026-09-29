@@ -82,7 +82,7 @@ export default function Home() {
           <div className="bg-gray-50 p-8 rounded-3xl w-full">
             <h3 className="text-2xl font-bold mb-6 text-gray-800">Core Skills</h3>
             <div className="flex flex-wrap gap-3">
-              {['Dart', 'Flutter', 'Firebase', 'REST APIs', 'Git/GitHub', 'BLoC', 'Provider', 'GetX', 'Swift', 'MVVM'].map(skill => (
+              {['Dart', 'Flutter', 'Firebase', 'REST APIs', 'Git/GitHub', 'GitLab', 'Node.js', 'MongoDB', 'DevOps', 'BLoC', 'Provider', 'GetX', 'Swift', 'MVVM'].map(skill => (
                 <span key={skill} className="px-4 py-2 bg-white shadow-sm border border-gray-100 rounded-full text-purple-700 font-medium text-sm">
                   {skill}
                 </span>
