@@ -29,8 +29,8 @@ export default function ParticleBackground() {
       speedY: number;
 
       constructor() {
-        this.x = Math.random() * canvas.width;
-        this.y = Math.random() * canvas.height;
+        this.x = Math.random() * canvas!.width;
+        this.y = Math.random() * canvas!.height;
         this.size = Math.random() * 3 + 1; // 1 to 4 px size (dust)
         this.speedX = Math.random() * 1 - 0.5; // -0.5 to 0.5
         this.speedY = Math.random() * 1 - 0.5;
@@ -41,8 +41,8 @@ export default function ParticleBackground() {
         this.y += this.speedY;
 
         // Bounce off edges
-        if (this.x < 0 || this.x > canvas.width) this.speedX *= -1;
-        if (this.y < 0 || this.y > canvas.height) this.speedY *= -1;
+        if (this.x < 0 || this.x > canvas!.width) this.speedX *= -1;
+        if (this.y < 0 || this.y > canvas!.height) this.speedY *= -1;
       }
 
       draw() {
