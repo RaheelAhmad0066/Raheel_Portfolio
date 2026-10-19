@@ -3,11 +3,14 @@ import ParticleBackground from "./ParticleBackground";
 export default function Home() {
   return (
     <div className="min-h-screen bg-[#FDFBFD] text-slate-900 selection:bg-purple-600 selection:text-white relative">
+      {/* Global Animated Coding Stream Background */}
+      <ParticleBackground />
+
       {/* Subtle Ambient Background Gradients */}
       <div className="fixed inset-0 pointer-events-none z-0 overflow-hidden">
-        <div className="absolute -top-40 -left-40 w-[600px] h-[600px] bg-gradient-to-tr from-purple-200/40 to-indigo-100/30 rounded-full blur-[130px] animate-glow" />
-        <div className="absolute top-[35%] -right-40 w-[550px] h-[550px] bg-gradient-to-bl from-violet-200/40 to-fuchsia-100/30 rounded-full blur-[140px] animate-glow" style={{ animationDelay: '3s' }} />
-        <div className="absolute -bottom-40 left-1/3 w-[500px] h-[500px] bg-gradient-to-t from-purple-100/40 to-pink-50/20 rounded-full blur-[120px]" />
+        <div className="absolute -top-40 -left-40 w-[600px] h-[600px] bg-gradient-to-tr from-purple-200/30 to-indigo-100/20 rounded-full blur-[130px] animate-glow" />
+        <div className="absolute top-[35%] -right-40 w-[550px] h-[550px] bg-gradient-to-bl from-violet-200/30 to-fuchsia-100/20 rounded-full blur-[140px] animate-glow" style={{ animationDelay: '3s' }} />
+        <div className="absolute -bottom-40 left-1/3 w-[500px] h-[500px] bg-gradient-to-t from-purple-100/30 to-pink-50/15 rounded-full blur-[120px]" />
       </div>
 
       {/* Navigation */}
@@ -43,8 +46,7 @@ export default function Home() {
 
       {/* Hero Section */}
       <section className="relative px-6 pt-24 pb-20 md:pt-32 md:pb-28 flex flex-col items-center justify-center text-center overflow-hidden">
-        {/* Animated Dust Particles */}
-        <ParticleBackground />
+
 
         <div className="relative z-10 w-full max-w-4xl mx-auto flex flex-col items-center">
           {/* Status badge */}
@@ -90,28 +92,22 @@ export default function Home() {
             </a>
           </div>
 
-          {/* Sleek IDE Code Editor Window Mockup (Software Engineer Signature) */}
-          <div className="w-full max-w-2xl text-left bg-slate-900/95 backdrop-blur-xl border border-slate-800 rounded-2xl shadow-2xl overflow-hidden font-code text-xs text-slate-300">
-            {/* Window bar */}
-            <div className="flex items-center justify-between px-4 py-2.5 bg-slate-950/80 border-b border-slate-800/80">
-              <div className="flex items-center gap-2">
-                <span className="w-3 h-3 rounded-full bg-rose-500/80"></span>
-                <span className="w-3 h-3 rounded-full bg-amber-500/80"></span>
-                <span className="w-3 h-3 rounded-full bg-emerald-500/80"></span>
-                <span className="ml-3 text-[11px] text-slate-400 font-mono">raheel_profile.dart</span>
+          {/* Metric Badges */}
+          <div className="grid grid-cols-3 gap-3 sm:gap-6 w-full max-w-xl">
+            {[
+              { val: "3+ Yrs", label: "Experience" },
+              { val: "7+ Apps", label: "Shipped" },
+              { val: "100%", label: "Satisfaction" }
+            ].map((stat, i) => (
+              <div key={i} className="glass-card p-4 rounded-2xl shadow-xs text-center border border-purple-100/60 hover:border-purple-300 transition-colors">
+                <div className="text-2xl sm:text-3xl font-light text-slate-900">
+                  {stat.val}
+                </div>
+                <div className="text-xs font-medium text-slate-500 mt-1">
+                  {stat.label}
+                </div>
               </div>
-              <span className="text-[10px] text-purple-400 bg-purple-950/60 px-2 py-0.5 rounded border border-purple-800/50 font-mono">Flutter • Dart</span>
-            </div>
-            
-            {/* Code content */}
-            <div className="p-4 sm:p-5 space-y-1.5 overflow-x-auto leading-relaxed">
-              <p><span className="text-purple-400">class</span> <span className="text-amber-300">RaheelAhmad</span> <span className="text-purple-400">extends</span> <span className="text-cyan-300">FlutterEngineer</span> {'{'}</p>
-              <p className="pl-4"><span className="text-purple-400">final</span> String expertise = <span className="text-emerald-300">&quot;Production Android &amp; iOS Apps&quot;</span>;</p>
-              <p className="pl-4"><span className="text-purple-400">final</span> List&lt;String&gt; coreStack = [<span className="text-emerald-300">&quot;Flutter&quot;</span>, <span className="text-emerald-300">&quot;Dart&quot;</span>, <span className="text-emerald-300">&quot;BLoC&quot;</span>, <span className="text-emerald-300">&quot;REST APIs&quot;</span>];</p>
-              <p className="pl-4"><span className="text-purple-400">final</span> bool readyForHighImpactRoles = <span className="text-amber-400">true</span>;</p>
-              <p className="pl-4 text-slate-500">// Actively engineering scalable mobile ecosystems<span className="typing-cursor"></span></p>
-              <p>{'}'}</p>
-            </div>
+            ))}
           </div>
         </div>
       </section>
