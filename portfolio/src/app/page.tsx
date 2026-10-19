@@ -2,31 +2,31 @@ import ParticleBackground from "./ParticleBackground";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-[#FDFBFD] text-slate-900 selection:bg-purple-600 selection:text-white relative">
-      {/* Global Animated Coding Stream Background */}
+    <div className="min-h-screen bg-[#F8FAFC] text-slate-800 selection:bg-blue-600 selection:text-white relative">
+      {/* Global Animated Clean Dust Particles */}
       <ParticleBackground />
 
-      {/* Subtle Ambient Background Gradients */}
+      {/* Subtle Sky/Blue Ambient Glow Spheres (Soft, No Jamni) */}
       <div className="fixed inset-0 pointer-events-none z-0 overflow-hidden">
-        <div className="absolute -top-40 -left-40 w-[600px] h-[600px] bg-gradient-to-tr from-purple-200/30 to-indigo-100/20 rounded-full blur-[130px] animate-glow" />
-        <div className="absolute top-[35%] -right-40 w-[550px] h-[550px] bg-gradient-to-bl from-violet-200/30 to-fuchsia-100/20 rounded-full blur-[140px] animate-glow" style={{ animationDelay: '3s' }} />
-        <div className="absolute -bottom-40 left-1/3 w-[500px] h-[500px] bg-gradient-to-t from-purple-100/30 to-pink-50/15 rounded-full blur-[120px]" />
+        <div className="absolute -top-40 -left-40 w-[600px] h-[600px] bg-blue-100/50 rounded-full blur-[130px]" />
+        <div className="absolute top-[35%] -right-40 w-[550px] h-[550px] bg-sky-100/40 rounded-full blur-[140px]" />
+        <div className="absolute -bottom-40 left-1/3 w-[500px] h-[500px] bg-slate-100/60 rounded-full blur-[120px]" />
       </div>
 
       {/* Navigation */}
       <header className="sticky top-0 z-50 px-4 sm:px-8 pt-4">
-        <nav className="glass-nav max-w-6xl mx-auto flex items-center justify-between px-6 py-3.5 rounded-2xl shadow-sm shadow-purple-500/5 transition-all duration-300">
-          <a href="#" className="flex items-center gap-2 group">
-            <div className="w-9 h-9 rounded-xl bg-gradient-to-tr from-purple-600 to-indigo-600 flex items-center justify-center text-white font-bold text-base shadow-md shadow-purple-500/25 group-hover:scale-105 transition-transform">
+        <nav className="glass-nav max-w-6xl mx-auto flex items-center justify-between px-6 py-3.5 rounded-2xl shadow-sm transition-all duration-300">
+          <a href="#" className="flex items-center gap-2.5 group">
+            <div className="w-9 h-9 rounded-xl bg-blue-600 flex items-center justify-center text-white font-bold text-base shadow-md shadow-blue-500/25 group-hover:scale-105 transition-transform">
               R
             </div>
-            <span className="font-bold text-lg tracking-tight bg-gradient-to-r from-slate-900 to-slate-700 bg-clip-text text-transparent">
-              Raheel<span className="text-purple-600 font-extrabold">.dev</span>
+            <span className="font-bold text-lg tracking-tight text-slate-900">
+              Raheel<span className="text-blue-600 font-extrabold">.dev</span>
             </span>
           </a>
 
-          <div className="hidden md:flex items-center gap-1 bg-slate-100/70 p-1 rounded-xl border border-slate-200/50 text-sm font-medium text-slate-600">
-            <a href="#" className="px-4 py-1.5 rounded-lg text-purple-700 bg-white shadow-xs font-semibold">Home</a>
+          <div className="hidden md:flex items-center gap-1 bg-slate-100/80 p-1 rounded-xl border border-slate-200/60 text-sm font-medium text-slate-600">
+            <a href="#" className="px-4 py-1.5 rounded-lg text-blue-700 bg-white shadow-xs font-semibold">Home</a>
             <a href="#about" className="px-4 py-1.5 rounded-lg hover:text-slate-900 hover:bg-white/60 transition">About</a>
             <a href="#experience" className="px-4 py-1.5 rounded-lg hover:text-slate-900 hover:bg-white/60 transition">Experience</a>
             <a href="#portfolio" className="px-4 py-1.5 rounded-lg hover:text-slate-900 hover:bg-white/60 transition">Projects</a>
@@ -36,7 +36,7 @@ export default function Home() {
             href="https://wa.me/923090320565" 
             target="_blank" 
             rel="noopener noreferrer" 
-            className="inline-flex items-center gap-2 px-5 py-2.5 bg-gradient-to-r from-purple-600 to-indigo-600 text-white font-medium text-sm rounded-xl shadow-md shadow-purple-500/20 hover:shadow-lg hover:shadow-purple-500/30 hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200"
+            className="inline-flex items-center gap-2 px-5 py-2.5 bg-blue-600 text-white font-medium text-sm rounded-xl shadow-md shadow-blue-500/20 hover:bg-blue-700 hover:shadow-lg hover:shadow-blue-500/30 hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200"
           >
             <span>Let’s Talk</span>
             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
@@ -46,23 +46,21 @@ export default function Home() {
 
       {/* Hero Section */}
       <section className="relative px-6 pt-24 pb-20 md:pt-32 md:pb-28 flex flex-col items-center justify-center text-center overflow-hidden">
-
-
         <div className="relative z-10 w-full max-w-4xl mx-auto flex flex-col items-center">
           {/* Status badge */}
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-purple-50/80 border border-purple-200/60 shadow-xs mb-8 backdrop-blur-md">
+          <div className="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-blue-50 border border-blue-200/70 shadow-xs mb-8">
             <span className="relative flex h-2 w-2">
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
               <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
             </span>
-            <span className="text-xs font-semibold tracking-wide text-purple-900">Senior Mobile Application Engineer</span>
+            <span className="text-xs font-semibold tracking-wide text-blue-900">Senior Mobile Application Engineer</span>
           </div>
 
           {/* Main sleek heading with Outfit font */}
-          <h1 className="font-display text-4xl sm:text-5xl md:text-6xl font-light tracking-tight text-slate-800 leading-[1.2] mb-5">
+          <h1 className="font-display text-4xl sm:text-5xl md:text-6xl font-light tracking-tight text-slate-900 leading-[1.25] mb-5 px-4">
             Architecting <span className="font-medium text-slate-900">mobile products</span> with
             <br />
-            <span className="font-normal italic bg-gradient-to-r from-purple-600 via-indigo-600 to-violet-600 bg-clip-text text-transparent">
+            <span className="font-normal italic text-blue-600 inline-block pr-3">
               clarity, precision & speed
             </span>
           </h1>
@@ -77,7 +75,7 @@ export default function Home() {
               href="/Raheel_Ahmad_CV.pdf" 
               download="Raheel_Ahmad_CV.pdf" 
               target="_blank" 
-              className="inline-flex items-center gap-2.5 px-6 py-3 bg-slate-900 text-white rounded-xl font-medium text-sm shadow-md hover:bg-purple-700 hover:shadow-purple-500/20 hover:-translate-y-0.5 transition-all duration-200"
+              className="inline-flex items-center gap-2.5 px-6 py-3 bg-blue-600 text-white rounded-xl font-medium text-sm shadow-md shadow-blue-500/20 hover:bg-blue-700 hover:shadow-lg hover:shadow-blue-500/30 hover:-translate-y-0.5 transition-all duration-200"
             >
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
               <span>Download CV</span>
@@ -85,7 +83,7 @@ export default function Home() {
 
             <a 
               href="#portfolio" 
-              className="inline-flex items-center gap-2 px-6 py-3 bg-white/90 text-slate-700 border border-slate-200/90 rounded-xl font-medium text-sm shadow-xs hover:border-purple-300 hover:text-purple-700 hover:bg-purple-50/50 hover:-translate-y-0.5 transition-all duration-200"
+              className="inline-flex items-center gap-2 px-6 py-3 bg-white text-slate-700 border border-slate-200 rounded-xl font-medium text-sm shadow-xs hover:border-blue-400 hover:text-blue-600 hover:bg-blue-50/40 hover:-translate-y-0.5 transition-all duration-200"
             >
               <span>View Projects</span>
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"/></svg>
@@ -99,7 +97,7 @@ export default function Home() {
               { val: "7+ Apps", label: "Shipped" },
               { val: "100%", label: "Satisfaction" }
             ].map((stat, i) => (
-              <div key={i} className="glass-card p-4 rounded-2xl shadow-xs text-center border border-purple-100/60 hover:border-purple-300 transition-colors">
+              <div key={i} className="glass-card p-4 rounded-2xl text-center hover:border-blue-300 transition-colors">
                 <div className="text-2xl sm:text-3xl font-light text-slate-900">
                   {stat.val}
                 </div>
@@ -117,8 +115,8 @@ export default function Home() {
         <div className="grid lg:grid-cols-12 gap-10 items-start">
           {/* Bio Side */}
           <div className="lg:col-span-5 flex flex-col gap-5">
-            <div className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-purple-600">
-              <span className="w-2 h-2 rounded-full bg-purple-600"></span>
+            <div className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-blue-600">
+              <span className="w-2 h-2 rounded-full bg-blue-600"></span>
               Engineering Philosophy
             </div>
             <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 leading-tight">
@@ -136,7 +134,7 @@ export default function Home() {
                 href="https://github.com/RaheelAhmad0066" 
                 target="_blank" 
                 rel="noopener noreferrer" 
-                className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl border border-slate-200 text-xs font-semibold text-slate-700 bg-white hover:border-purple-300 hover:text-purple-600 shadow-xs transition"
+                className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl border border-slate-200 text-xs font-semibold text-slate-700 bg-white hover:border-blue-400 hover:text-blue-600 shadow-xs transition"
               >
                 GitHub Profile ↗
               </a>
@@ -144,7 +142,7 @@ export default function Home() {
                 href="https://www.linkedin.com/in/raheel-ahmad-dev" 
                 target="_blank" 
                 rel="noopener noreferrer" 
-                className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl border border-slate-200 text-xs font-semibold text-slate-700 bg-white hover:border-purple-300 hover:text-purple-600 shadow-xs transition"
+                className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl border border-slate-200 text-xs font-semibold text-slate-700 bg-white hover:border-blue-400 hover:text-blue-600 shadow-xs transition"
               >
                 LinkedIn Profile ↗
               </a>
@@ -152,10 +150,10 @@ export default function Home() {
           </div>
 
           {/* Skills side */}
-          <div className="lg:col-span-7 bg-white/90 backdrop-blur-md p-8 rounded-3xl border border-purple-100/80 shadow-sm shadow-purple-500/5">
+          <div className="lg:col-span-7 bg-white p-8 rounded-3xl border border-slate-200 shadow-sm">
             <h3 className="text-lg font-bold text-slate-900 mb-6 flex items-center justify-between">
               <span>Technical Arsenal & Tooling</span>
-              <span className="text-xs font-semibold text-purple-600 bg-purple-50 px-3 py-1 rounded-full border border-purple-100">Verified Skills</span>
+              <span className="text-xs font-semibold text-blue-700 bg-blue-50 px-3 py-1 rounded-full border border-blue-100">Verified Skills</span>
             </h3>
 
             <div className="space-y-5">
@@ -163,7 +161,7 @@ export default function Home() {
                 <p className="text-xs font-bold uppercase tracking-wider text-slate-400 mb-2.5">Mobile & Architecture</p>
                 <div className="flex flex-wrap gap-2">
                   {['Flutter', 'Dart', 'BLoC Pattern', 'Provider', 'GetX', 'Swift', 'MVVM', 'Clean Architecture'].map(skill => (
-                    <span key={skill} className="px-3.5 py-1.5 bg-purple-50/70 border border-purple-100/90 rounded-xl text-purple-900 font-medium text-xs hover:border-purple-300 hover:bg-purple-100/80 transition-colors">
+                    <span key={skill} className="px-3.5 py-1.5 bg-blue-50/80 border border-blue-100 rounded-xl text-blue-900 font-medium text-xs hover:border-blue-300 hover:bg-blue-100/70 transition-colors">
                       {skill}
                     </span>
                   ))}
@@ -174,7 +172,7 @@ export default function Home() {
                 <p className="text-xs font-bold uppercase tracking-wider text-slate-400 mb-2.5">Backend & Cloud</p>
                 <div className="flex flex-wrap gap-2">
                   {['Firebase', 'RESTful APIs', 'Node.js', 'MongoDB', 'Authentication & JWT', 'Payment Gateways'].map(skill => (
-                    <span key={skill} className="px-3.5 py-1.5 bg-slate-50 border border-slate-200/80 rounded-xl text-slate-700 font-medium text-xs hover:border-purple-200 hover:bg-purple-50/50 transition-colors">
+                    <span key={skill} className="px-3.5 py-1.5 bg-slate-50 border border-slate-200 rounded-xl text-slate-700 font-medium text-xs hover:border-blue-300 hover:bg-blue-50/40 transition-colors">
                       {skill}
                     </span>
                   ))}
@@ -185,7 +183,7 @@ export default function Home() {
                 <p className="text-xs font-bold uppercase tracking-wider text-slate-400 mb-2.5">DevOps & Collaboration</p>
                 <div className="flex flex-wrap gap-2">
                   {['Git / GitHub', 'GitLab CI/CD', 'App Store Connect', 'Google Play Console', 'Agile / Scrum'].map(skill => (
-                    <span key={skill} className="px-3.5 py-1.5 bg-slate-50 border border-slate-200/80 rounded-xl text-slate-700 font-medium text-xs hover:border-purple-200 hover:bg-purple-50/50 transition-colors">
+                    <span key={skill} className="px-3.5 py-1.5 bg-slate-50 border border-slate-200 rounded-xl text-slate-700 font-medium text-xs hover:border-blue-300 hover:bg-blue-50/40 transition-colors">
                       {skill}
                     </span>
                   ))}
@@ -199,8 +197,8 @@ export default function Home() {
       {/* Experience Section */}
       <section id="experience" className="relative z-10 px-6 py-20 max-w-6xl mx-auto">
         <div className="text-center max-w-2xl mx-auto mb-14">
-          <div className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-purple-600 mb-3">
-            <span className="w-2 h-2 rounded-full bg-purple-600"></span>
+          <div className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-blue-600 mb-3">
+            <span className="w-2 h-2 rounded-full bg-blue-600"></span>
             Career Timeline
           </div>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900">Work Experience</h2>
@@ -213,42 +211,38 @@ export default function Home() {
               role: "Flutter Developer", 
               company: "Mentor Sol-Tech", 
               period: "09/2024 – Present", 
-              badge: "Current",
               desc: "Developing modular mobile apps using Flutter and Dart. Integrating Firebase, REST APIs, and seamless in-app payment gateways." 
             },
             { 
               role: "Flutter Developer", 
               company: "Opal Axis", 
               period: "01/2022 – 12/2023", 
-              badge: "Full-Time",
               desc: "Assisted in UI/UX improvements, implemented features & critical bug fixes, and drastically optimized app frame rates & memory usage." 
             },
             { 
               role: "Flutter Developer", 
               company: "Acme Technologies", 
               period: "01/2021 – 01/2022", 
-              badge: "Full-Time",
               desc: "Integrated various APIs and third-party services such as Firebase, REST endpoints, and complex state management workflows." 
             },
             { 
               role: "Developer (Intern)", 
               company: "Combined Fabric", 
               period: "2019 – 08/2020", 
-              badge: "Internship",
               desc: "Engineered web interfaces and resolved performance bottlenecks before specializing completely in Flutter & mobile architectures." 
             },
           ].map((job, idx) => (
             <div 
               key={idx} 
-              className="group bg-white p-7 rounded-2xl border border-slate-200/80 shadow-xs hover:border-purple-300 hover:shadow-lg hover:shadow-purple-500/5 transition-all duration-300 flex flex-col justify-between"
+              className="glass-card-interactive p-7 rounded-2xl flex flex-col justify-between"
             >
               <div>
                 <div className="flex justify-between items-start gap-4 mb-3">
                   <div>
-                    <h3 className="text-lg font-bold text-slate-900 group-hover:text-purple-700 transition-colors">{job.role}</h3>
-                    <p className="text-sm font-semibold text-purple-600">{job.company}</p>
+                    <h3 className="text-lg font-bold text-slate-900">{job.role}</h3>
+                    <p className="text-sm font-semibold text-blue-600">{job.company}</p>
                   </div>
-                  <span className="text-xs font-semibold text-slate-500 bg-slate-100 px-3 py-1 rounded-full whitespace-nowrap">
+                  <span className="text-xs font-semibold text-blue-700 bg-blue-50 border border-blue-100 px-3 py-1 rounded-full whitespace-nowrap">
                     {job.period}
                   </span>
                 </div>
@@ -262,8 +256,8 @@ export default function Home() {
       {/* Projects Section */}
       <section id="portfolio" className="relative z-10 px-6 py-24 max-w-6xl mx-auto">
         <div className="text-center max-w-2xl mx-auto mb-16">
-          <div className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-purple-600 mb-3">
-            <span className="w-2 h-2 rounded-full bg-purple-600"></span>
+          <div className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-blue-600 mb-3">
+            <span className="w-2 h-2 rounded-full bg-blue-600"></span>
             Featured Applications
           </div>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900">Production Deployments</h2>
@@ -340,11 +334,11 @@ export default function Home() {
           ].map((project, idx) => (
             <div 
               key={idx} 
-              className="group bg-white rounded-3xl border border-slate-200/80 overflow-hidden shadow-xs hover:border-purple-300 hover:shadow-xl hover:shadow-purple-500/10 transition-all duration-300 flex flex-col justify-between"
+              className="glass-card-interactive rounded-3xl overflow-hidden flex flex-col justify-between"
             >
               <div>
                 {/* Banner Image Preview */}
-                <div className="relative w-full h-64 bg-slate-50/70 border-b border-slate-100 overflow-hidden flex items-center justify-center p-4">
+                <div className="relative w-full h-64 bg-slate-50 border-b border-slate-100 overflow-hidden flex items-center justify-center p-4">
                   {project.image ? (
                     <img 
                       src={project.image} 
@@ -354,18 +348,18 @@ export default function Home() {
                   ) : (
                     <div className="text-slate-300 font-bold text-xl">Preview Coming Soon</div>
                   )}
-                  <span className="absolute top-4 left-4 text-[11px] font-bold tracking-wide uppercase px-3 py-1 rounded-full bg-white/95 text-purple-700 shadow-xs border border-purple-100 backdrop-blur-sm">
+                  <span className="absolute top-4 left-4 text-[11px] font-bold tracking-wide uppercase px-3 py-1 rounded-full bg-white/95 text-blue-700 shadow-sm border border-blue-100 backdrop-blur-sm">
                     {project.tech}
                   </span>
                 </div>
 
                 <div className="p-7">
                   <div className="flex items-center justify-between mb-2">
-                    <h3 className="text-2xl font-extrabold text-slate-900 group-hover:text-purple-700 transition-colors">
+                    <h3 className="text-2xl font-extrabold text-slate-900">
                       {project.name}
                     </h3>
                   </div>
-                  <h4 className="text-sm font-semibold text-purple-600 mb-3">{project.type}</h4>
+                  <h4 className="text-sm font-semibold text-blue-600 mb-3">{project.type}</h4>
                   <p className="text-slate-600 text-sm leading-relaxed mb-6">{project.desc}</p>
                 </div>
               </div>
@@ -375,7 +369,7 @@ export default function Home() {
                   href={project.link} 
                   target="_blank" 
                   rel="noopener noreferrer" 
-                  className="w-full inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-slate-50 text-slate-800 text-sm font-semibold border border-slate-200 group-hover:bg-purple-600 group-hover:border-purple-600 group-hover:text-white transition-all duration-200 shadow-xs"
+                  className="w-full inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-slate-50 text-slate-800 text-sm font-semibold border border-slate-200 hover:bg-blue-600 hover:border-blue-600 hover:text-white transition-all duration-200 shadow-xs"
                 >
                   <span>View on {project.linkText}</span>
                   <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
@@ -387,11 +381,11 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <footer className="relative z-10 bg-slate-950 text-slate-300 py-16 px-6 mt-16 border-t border-slate-900">
+      <footer className="relative z-10 bg-slate-900 text-slate-400 py-16 px-6 mt-16 border-t border-slate-800">
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-start md:items-center gap-8">
           <div>
-            <div className="flex items-center gap-2 mb-2">
-              <div className="w-8 h-8 rounded-lg bg-gradient-to-tr from-purple-500 to-indigo-500 flex items-center justify-center text-white font-bold text-sm">
+            <div className="flex items-center gap-2.5 mb-2">
+              <div className="w-8 h-8 rounded-lg bg-blue-600 flex items-center justify-center text-white font-bold text-sm">
                 R
               </div>
               <h2 className="text-xl font-extrabold text-white">Raheel Ahmad</h2>
@@ -402,19 +396,18 @@ export default function Home() {
           </div>
 
           <div className="flex flex-wrap items-center gap-6 text-sm font-medium">
-            <a href="https://github.com/RaheelAhmad0066" target="_blank" rel="noopener noreferrer" className="hover:text-purple-400 transition-colors">GitHub</a>
-            <a href="https://www.linkedin.com/in/raheel-ahmad-dev" target="_blank" rel="noopener noreferrer" className="hover:text-purple-400 transition-colors">LinkedIn</a>
-            <a href="mailto:raheelahmad0119@gmail.com" className="hover:text-purple-400 transition-colors">Email</a>
-            <a href="https://wa.me/923090320565" target="_blank" rel="noopener noreferrer" className="px-4 py-2 rounded-xl bg-purple-600/20 text-purple-300 border border-purple-500/30 hover:bg-purple-600 hover:text-white transition-all">WhatsApp</a>
+            <a href="https://github.com/RaheelAhmad0066" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition-colors">GitHub</a>
+            <a href="https://www.linkedin.com/in/raheel-ahmad-dev" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition-colors">LinkedIn</a>
+            <a href="mailto:raheelahmad0119@gmail.com" className="hover:text-blue-400 transition-colors">Email</a>
+            <a href="https://wa.me/923090320565" target="_blank" rel="noopener noreferrer" className="px-4 py-2 rounded-xl bg-blue-600/20 text-blue-300 border border-blue-500/30 hover:bg-blue-600 hover:text-white transition-all">WhatsApp</a>
           </div>
         </div>
 
-        <div className="max-w-6xl mx-auto mt-12 pt-6 border-t border-slate-800/60 flex flex-col sm:flex-row justify-between items-center text-xs text-slate-500 gap-4">
+        <div className="max-w-6xl mx-auto mt-12 pt-6 border-t border-slate-800 flex flex-col sm:flex-row justify-between items-center text-xs text-slate-500 gap-4">
           <p>© {new Date().getFullYear()} Raheel Ahmad. All rights reserved.</p>
-          <p className="font-mono text-slate-500">Crafted with Flutter mindset & Next.js</p>
+          <p className="font-mono text-slate-500">Engineered with Flutter mindset & Next.js</p>
         </div>
       </footer>
     </div>
   );
 }
-
